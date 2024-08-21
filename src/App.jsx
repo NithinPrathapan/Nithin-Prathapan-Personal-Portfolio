@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import useMediaQuery from "./hooks/useMediaQuery";
 import DotGroup from "./components/DotGroup";
+import Landing from "./components/Landing";
 
 const App = () => {
   const [selectedPage, setSelectedpage] = useState("home");
@@ -19,13 +20,14 @@ const App = () => {
   return (
     <div className="app bg-deep_blue">
       <Navbar isTopOfPage={isTopOfPage} selectedPage={setSelectedpage} />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto md:h-full ">
         {isAboveMediumScreens && (
           <DotGroup
             selectedPage={selectedPage}
             setSelectedpage={setSelectedpage}
           />
         )}
+        <Landing setSelectedpage={setSelectedpage} />
       </div>
     </div>
   );
