@@ -9,6 +9,6 @@ body,
 .app {
   height: 100%;
   background: #010026;
-  @apply text-white; 
+  @apply text-white
   /* settng default styles to all components */
 }
