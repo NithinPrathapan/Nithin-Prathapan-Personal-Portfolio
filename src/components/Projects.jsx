@@ -34,7 +34,7 @@ const Project = ({ title, img }) => {
           porttitor accumsan tincidunt.
         </p>
       </div>
-      <img src={img} alt={projectTitle} />
+      <img className="" src={img} alt={projectTitle} />
     </motion.div>
   );
 };
@@ -82,6 +82,7 @@ const Projects = () => {
           variants={container}
         >
           {/* row1  */}
+          {/* add github and project link  */}
           <div
             className="flex uppercase justify-center text-center items-center p-10 bg-red 
           max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
