@@ -8,16 +8,18 @@ const Footer = () => {
     <footer id="footer" className="h-64  pt-10">
       <div className="w-5/6 mx-auto ">
         <SocialMediaIcons />
-        <div className="md:flex justify-center md:justify-between text-center">
-          <div className="flex flex-col justify-start text-start">
-            <p className="font-playfair font-semibold text-2xl ">
+        <div className="md:flex md:justify-between  justify-center    ">
+          <div className="md:text-start text-center">
+            <p className="font-playfair  font-semibold text-2xl ">
               NITHIN PRATHAPAN
             </p>
-            <p>+91-8848946278</p>
+            <p className="mt-2 md:mt-0 md:text-start">+91-8848946278</p>
           </div>
-          <p className="font-playfair text-sm ">
-            ©️2024 Nithin Prathapan. All Rigts Reserved.
-          </p>
+          <div>
+            <p className="font-playfair text-sm mt-2 md:mt-0 text-center md:text-end ">
+              ©️2024 Nithin Prathapan. All Rigts Reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>

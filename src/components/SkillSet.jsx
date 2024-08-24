@@ -20,7 +20,7 @@ const SkillSet = () => {
           <h1 className="uppercase text-2xl tracking-widest text-center  font-semibold">
             Tech I'm <span className="text-red">familiar with</span>
           </h1>
-          <div className="w-1/3 mx-auto ">
+          <div className="md:w-1/5 w-2/5 mx-auto ">
             <LineGradient />
           </div>
         </motion.div>
