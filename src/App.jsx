@@ -39,17 +39,15 @@ const App = () => {
         <Landing setSelectedpage={setSelectedpage} />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto min-h-full">
         <MySkills />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto ">
+      <div className="w-5/6 mx-auto min-h-full">
         <Projects />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto ">
-        <Testimonials />
-      </div>
+      <div className="w-5/6 mx-auto ">{/* <Testimonials /> */}</div>
       <LineGradient />
       <div className="w-5/6 mx-auto ">
         <Contact />

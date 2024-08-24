@@ -65,9 +65,12 @@ const Landing = ({ setSelectedpage }) => {
             </span>
           </p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit iure
-            cupiditate velit ratione autem, dolorum quod vel consectetur
-            distinctio hic?
+            Hi, I am a Full Stack Web Developer and Web Designer. An Open Source
+            enthusiast and a Computer Science graduate from India. <br />I am a
+            Software engineer with a strong foundation in Computer Science,
+            specializing in web development. I love working on new and exciting
+            technologies. I have a keen interest in Web Development and I am
+            always looking for new opportunities to learn and grow.
           </p>
         </motion.div>
         <motion.div

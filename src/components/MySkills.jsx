@@ -3,12 +3,14 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import LineGradient from "./LineGradient";
 import { motion } from "framer-motion";
 import skills from "../assets/skills-image.png";
+import SkillSet from "./SkillSet";
 
 const MySkills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1080px)");
   return (
-    <section id="skills" className="pt-10 pb-24">
+    <div id="skills" className="pt-10 pb-24">
       {/* header and image section */}
+
       <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div
           className=" md:w-1/3 "
@@ -65,16 +67,14 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">01</p>
               <p className="font-playfair font-semibold text-2xl mt-3">
-                Frontend Development <br /> (React.js)
+                Web Design <br />
               </p>
             </div>
-            <div className="w-1/4 rounded-r-md h-32 bg-red absolute right-0 top-0 z-[-1]" />
+            <div className="w-2/4 rounded-r-md h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Proficient in React.js for building responsive, dynamic UIs. Skilled
-            in HTML5, CSS3, JavaScript ES6+, Tailwind CSS, and Bootstrap for
-            efficient UI design. Experienced with Redux Toolkit for state
-            management in complex applications.
+            I love designs and it's the first step before creating any website
+            as I can give layout to my imagination.
           </p>
         </motion.div>
         {/* innovative */}
@@ -93,16 +93,14 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">02</p>
               <p className="font-playfair font-semibold text-2xl mt-3">
-                Backend Development
+                Web Development
               </p>
             </div>
-            <div className="w-1/4 rounded-r-md h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
+            <div className="w-2/4 rounded-r-md h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Skilled in Node.js and Express.js for building scalable, efficient
-            backend services. Skilled in JWT for secure authentication.Using
-            MongoDB for database management. Familiar with RESTful APIs,
-            middleware,Jest and handling server-side logic efficiently.
+            I am a Full Stack Web Developer (MERN).Skilled in Node.js and
+            Express.js for building robust APIs
           </p>
         </motion.div>
         {/* imaginative */}
@@ -121,19 +119,19 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">03</p>
               <p className="font-playfair font-semibold text-2xl mt-3">
-                Database Management
+                Problem Solving
               </p>
             </div>
-            <div className="w-1/4 rounded-r-md h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+            <div className="w-2/4 rounded-r-md h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Expertise in MongoDB and Mongoose for creating, querying, and
-            maintaining databases.Proficient in data modeling, indexing, and
-            optimization
+            I love solving problems whether programming problems or real life
+            problems.
           </p>
         </motion.div>
       </div>
-    </section>
+      <SkillSet />
+    </div>
   );
 };
 
