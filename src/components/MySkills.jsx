@@ -26,8 +26,10 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            dolores excepturi, inventore in alias cumque earum.
+            I am a Full Stack developer (MERN) and I love in designing scalable
+            applications and solving complex problems through efficient,
+            responsive UIs, optimized backend services, and robust database
+            management.
           </p>
         </motion.div>
         <div className="mt-16 md:mt-0">
@@ -62,17 +64,17 @@ const MySkills = () => {
           <div className="relative h-32">
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">01</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
-                Innovative
+              <p className="font-playfair font-semibold text-2xl mt-3">
+                Frontend Development <br /> (React.js)
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 rounded-r-md h-32 bg-red absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/4 rounded-r-md h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
+            Proficient in React.js for building responsive, dynamic UIs. Skilled
+            in HTML5, CSS3, JavaScript ES6+, Tailwind CSS, and Bootstrap for
+            efficient UI design. Experienced with Redux Toolkit for state
+            management in complex applications.
           </p>
         </motion.div>
         {/* innovative */}
@@ -90,17 +92,17 @@ const MySkills = () => {
           <div className="relative h-32">
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">02</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
-                Innovative
+              <p className="font-playfair font-semibold text-2xl mt-3">
+                Backend Development
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 rounded-r-md h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/4 rounded-r-md h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
+            Skilled in Node.js and Express.js for building scalable, efficient
+            backend services. Skilled in JWT for secure authentication.Using
+            MongoDB for database management. Familiar with RESTful APIs,
+            middleware,Jest and handling server-side logic efficiently.
           </p>
         </motion.div>
         {/* imaginative */}
@@ -118,17 +120,16 @@ const MySkills = () => {
           <div className="relative h-32">
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">03</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
-                Innovative
+              <p className="font-playfair font-semibold text-2xl mt-3">
+                Database Management
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 rounded-r-md h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/4 rounded-r-md h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
+            Expertise in MongoDB and Mongoose for creating, querying, and
+            maintaining databases.Proficient in data modeling, indexing, and
+            optimization
           </p>
         </motion.div>
       </div>
