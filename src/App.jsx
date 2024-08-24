@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Education from "./components/Education";
 
 const App = () => {
   const [selectedPage, setSelectedpage] = useState("home");
@@ -45,6 +46,10 @@ const App = () => {
       <LineGradient />
       <div className="w-5/6 mx-auto min-h-full">
         <Projects />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto ">
+        <Education />
       </div>
       <LineGradient />
       <div className="w-5/6 mx-auto ">{/* <Testimonials /> */}</div>
