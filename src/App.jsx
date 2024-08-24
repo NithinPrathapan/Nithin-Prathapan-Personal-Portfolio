@@ -7,6 +7,10 @@ import LineGradient from "./components/LineGradient";
 import MySkills from "./components/MySkills";
 import Projects from "./components/Projects";
 import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   const [selectedPage, setSelectedpage] = useState("home");
@@ -23,6 +27,7 @@ const App = () => {
   }, []);
   return (
     <div className="app bg-deep_blue">
+      <ToastContainer />
       <Navbar isTopOfPage={isTopOfPage} selectedPage={setSelectedpage} />
       <div className="w-5/6 mx-auto md:h-full ">
         {isAboveMediumScreens && (
@@ -46,6 +51,13 @@ const App = () => {
         <Testimonials />
       </div>
       <LineGradient />
+      <div className="w-5/6 mx-auto ">
+        <Contact />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto ">
+        <Footer />
+      </div>
     </div>
   );
 };

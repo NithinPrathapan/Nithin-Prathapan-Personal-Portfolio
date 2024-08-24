@@ -10,10 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "emailjs": "^4.0.3",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^11.3.28",
+    "nodemailer": "^6.9.14",
     "react": "^18.3.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.52.2",
+    "react-toastify": "^10.0.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

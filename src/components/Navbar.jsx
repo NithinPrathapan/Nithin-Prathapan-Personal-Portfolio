@@ -4,13 +4,13 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import menu from "../assets/menu-icon.svg";
 import close from "../assets/close-icon.svg";
 
-const Link = ({ page, selectedPage, setSelectedPage }) => {
+const Link = ({ page, selectedPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
     <AnchorLink
       className={` hover:text-yellow transition duration-500`}
       href={`#${lowerCasePage}`}
-      onClick={() => setSelectedPage(lowerCasePage)}
+      onClick={() => selectedPage(lowerCasePage)}
     >
       {page}
     </AnchorLink>
@@ -31,7 +31,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             <Link
               page="Home"
               selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
+              setSelectedPage={selectedPage}
             />
             <Link
               page="Skills"
