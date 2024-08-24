@@ -55,7 +55,7 @@ const App = () => {
         <Contact />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto ">
+      <div className=" mx-auto ">
         <Footer />
       </div>
     </div>
