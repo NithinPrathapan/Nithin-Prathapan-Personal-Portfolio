@@ -25,28 +25,28 @@ const ProjectComponent = ({
         delay: isInView ? delay : 0,
         duration: 0.5, // Duration of the animation
       }}
-      className=" w-full flex flex-col justify-between md:flex md:flex-row-reverse md:p-8 p-4 items-center gap-2 rounded-md  border border-blue shadow-xl   shadow-black"
+      className=" md:w-full flex flex-col justify-between md:flex md:flex-row-reverse p-4 max-h-[100%] items-center gap-2 rounded-md  border border-white shadow-xl "
     >
       <div className="md:w-[45%] relative">
         <img
-          className="rounded-md min-w-full object-cover max-h-[380px] h-full"
+          className="rounded-md min-w-full md:object-contain object-cover max-h-[200px] md:max-h-[380px] "
           src={img}
           alt=""
         />
       </div>
-      <div className="md:w-[55%] md:text-start text-center flex flex-col gap-2">
+      <div className="md:w-[55%] w-full md:text-start text-center flex flex-col gap-2">
         <h1 className="text-2xl  font-playfair font-semibold text-yellow">
           {title}
         </h1>
         <div className="w-[15%] flex justify-center mx-auto md:mx-0">
           <LineGradient />
         </div>
-        <p className="italic my-2 md:text-start mx-auto md:mx-0 w-[80%] ">
+        <p className="italic my-2 md:text-start mx-auto md:mx-0  ">
           {description}
         </p>
 
         {skills && skills.length > 0 ? (
-          <div className="flex justify-center md:justify-start md:text-start items-center gap-2  mt-4 flex-wrap  w-[80%] md:mx-0 mx-auto  ">
+          <div className="flex justify-center md:justify-start md:text-start items-center gap-2  mt-4 flex-wrap   md:mx-0 mx-auto  ">
             {" "}
             {skills.map((skill) => {
               return (
@@ -57,15 +57,15 @@ const ProjectComponent = ({
         ) : (
           <></>
         )}
-        <div className="flex md:justify-start justify-center items-center gap-4 my-12">
+        <div className="flex md:justify-start justify-center items-center gap-4 my-1">
           <img
-            className="w-[35px] hover:scale-[105%]  duration-300 transition-all cursor-pointer"
+            className="w-[30px] hover:scale-[105%]  duration-300 transition-all cursor-pointer"
             title="Visit website"
             src={web}
             alt=""
           />
           <img
-            className="w-[35px] hover:scale-[105%] duration-300 transition-all cursor-pointer"
+            className="w-[30px] hover:scale-[105%] duration-300 transition-all cursor-pointer"
             title="View code on github"
             src={git}
             alt=""

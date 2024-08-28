@@ -100,7 +100,7 @@ const Projects = () => {
             delay={0.8}
           />
 
-          <div className="md:flex   justify-center items-center gap-4">
+          <div className="flex flex-col md:flex-row  justify-center items-center gap-4">
             <ProjectComponent
               title="Planty-Static Website"
               description={
