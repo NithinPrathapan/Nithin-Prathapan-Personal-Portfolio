@@ -11,6 +11,7 @@ const ProjectComponent = ({
   description,
   animation,
   delay,
+  skills,
 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
@@ -24,7 +25,7 @@ const ProjectComponent = ({
         delay: isInView ? delay : 0,
         duration: 0.5, // Duration of the animation
       }}
-      className=" w-full flex flex-col justify-between md:flex md:flex-row-reverse md:p-8 p-4 items-center gap-2 rounded-md  md:border border-blue shadow-xl   shadow-black"
+      className=" w-full flex flex-col justify-between md:flex md:flex-row-reverse md:p-8 p-4 items-center gap-2 rounded-md  border border-blue shadow-xl   shadow-black"
     >
       <div className="md:w-[45%] relative">
         <img
@@ -43,17 +44,19 @@ const ProjectComponent = ({
         <p className="italic my-2 md:text-start mx-auto md:mx-0 w-[80%] ">
           {description}
         </p>
-        <div className="flex justify-center md:justify-start md:text-start items-center gap-4 flex-wrap  w-[80%] md:mx-0 mx-auto  ">
-          <p className="text-center  font-semibold text-yellow font-playfair">
-            Lorem
-          </p>
-          <p className="text-center  font-semibold text-yellow font-playfair">
-            Lorem
-          </p>
-          <p className="text-center  font-semibold text-yellow font-playfair">
-            Lorem
-          </p>
-        </div>
+
+        {skills && skills.length > 0 ? (
+          <div className="flex justify-center md:justify-start md:text-start items-center gap-2  mt-4 flex-wrap  w-[80%] md:mx-0 mx-auto  ">
+            {" "}
+            {skills.map((skill) => {
+              return (
+                <p className=" rounded-md  cursor-default text-xs">{skill},</p>
+              );
+            })}
+          </div>
+        ) : (
+          <></>
+        )}
         <div className="flex md:justify-start justify-center items-center gap-4 my-12">
           <img
             className="w-[35px] hover:scale-[105%]  duration-300 transition-all cursor-pointer"

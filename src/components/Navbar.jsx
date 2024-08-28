@@ -44,7 +44,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Testimonials"
+              page="Experiance"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="Qualifications"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
@@ -68,7 +73,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             {/* close icon */}
             <div className="flex justify-end p-12">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                <img src={close} alt="close" />
+                <img className="" src={close} alt="close" />
               </button>
             </div>
             <div className="flex flex-col  gap-10 ml-[33%] text-2xl  text-deep_blue font-semibold">
@@ -88,7 +93,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="Testimonials"
+                page="Experiance"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Qualifications"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />

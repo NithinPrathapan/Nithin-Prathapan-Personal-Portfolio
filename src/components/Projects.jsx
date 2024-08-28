@@ -1,5 +1,8 @@
 import React from "react";
 import project1 from "../assets/real-estate.png";
+import nike from "../assets/nike.png";
+import grocerry from "../assets/groccerry.png";
+import planty from "../assets/planty.png";
 import { motion } from "framer-motion";
 import ProjectComponent from "./ProjectComponent";
 import LineGradient from "./LineGradient";
@@ -8,13 +11,13 @@ const Projects = () => {
     <section id="projects" className="flex justify-center pt-48 pb-48">
       <div>
         <motion.div
-          className=" md:w-2/5 mx-auto text-center "
+          className=" md:w-4/5 mx-auto text-center "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           transition={{ delay: 0.2, duration: 0.5 }}
           variants={{
-            hidden: { opacity: 0, y: -50 },
+            hidden: { opacity: 0, y: -25 },
             visible: { opacity: 1, y: 0 },
           }}
         >
@@ -28,11 +31,11 @@ const Projects = () => {
             </div>
           </div>
 
-          <p className="mt-10 mb-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            dolores excepturi, inventore in alias cumque earum. Lorem ipsum
-            dolor, sit amet consectetur adipisicing elit. Voluptate autem
-            quibusdam mollitia.
+          <p className="mt-6 mb-10 w-full">
+            Discover my passion for building real-world solutions through my
+            diverse portfolio of projects. Each project reflects my ability to
+            turn ideas into tangible results. Explore my work and see how I
+            leverage technology to solve problems and make a positive impact
           </p>
         </motion.div>
         <motion.div
@@ -44,18 +47,12 @@ const Projects = () => {
         >
           {/* row1  */}
           {/* add github and project link  */}
-          {/* <div
-          className="flex uppercase justify-center text-center items-center p-10 bg-red 
-    max-w-[400px]  text-2xl font-playfair font-semibold"
-        >
-          beautiful user ineterface
-        </div> */}
 
           {/* first row */}
           <ProjectComponent
             title="Real Estate Application"
             description={
-              "It has been developed using MERN Stack and designed using Tailwind CSS. It includes modern and responsive design."
+              " Developed using  MERN stack for managing real estate listings. Users can easily add, edit, and delete listings. It includes modern and responsive design"
             }
             skills={[
               "React.js",
@@ -70,7 +67,7 @@ const Projects = () => {
               "Firebase",
             ]}
             animation={{
-              hidden: { opacity: 0, x: -100 }, // Slide in from the left
+              hidden: { opacity: 0, x: -25 }, // Slide in from the left
               visible: { opacity: 1, x: 0 },
             }}
             delay={0.5}
@@ -79,7 +76,7 @@ const Projects = () => {
 
           {/* row 2 */}
           <ProjectComponent
-            title="Real Estate Application"
+            title="Groccerry Application"
             description={
               "It has been developed using MERN Stack and designed using Tailwind CSS. It includes modern and responsive design."
             }
@@ -95,9 +92,9 @@ const Projects = () => {
               "Tailwind",
               "Firebase",
             ]}
-            img={project1}
+            img={grocerry}
             animation={{
-              hidden: { opacity: 0, x: 100 }, // Slide in from the left
+              hidden: { opacity: 0, x: 25 }, // Slide in from the left
               visible: { opacity: 1, x: 0 },
             }}
             delay={0.8}
@@ -105,7 +102,7 @@ const Projects = () => {
 
           <div className="md:flex   justify-center items-center gap-4">
             <ProjectComponent
-              title="Real Estate Application"
+              title="Planty-Static Website"
               description={
                 "It has been developed using MERN Stack and designed using Tailwind CSS. It includes modern and responsive design."
               }
@@ -121,15 +118,15 @@ const Projects = () => {
                 "Tailwind",
                 "Firebase",
               ]}
-              img={project1}
+              img={planty}
               animation={{
-                hidden: { opacity: 0, y: 50 }, // Slide in from the left
+                hidden: { opacity: 0, y: 25 }, // Slide in from the left
                 visible: { opacity: 1, y: 0 },
               }}
               delay={0.5}
             />{" "}
             <ProjectComponent
-              title="Real Estate Application"
+              title="Nike-Landing Page clone"
               description={
                 "It has been developed using MERN Stack and designed using Tailwind CSS. It includes modern and responsive design."
               }
@@ -145,9 +142,9 @@ const Projects = () => {
                 "Tailwind",
                 "Firebase",
               ]}
-              img={project1}
+              img={nike}
               animation={{
-                hidden: { opacity: 0, y: 50 }, // Slide in from the left
+                hidden: { opacity: 0, y: 25 }, // Slide in from the left
                 visible: { opacity: 1, y: 0 },
               }}
               delay={0.3}

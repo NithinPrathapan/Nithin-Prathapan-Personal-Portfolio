@@ -25,6 +25,7 @@ export default {
         burtons: "burtons",
         dancing: "Dancing Script",
         poppins: "Poppins",
+        Courgette: "Courgette",
       },
       content: {
         brush: "url('./src/assets/brush.png')",

@@ -42,11 +42,11 @@ const Contact = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <p className="font-playfair font-semibold text-4xl  text-yellow">
+        <p className="font-playfair text-start font-semibold text-4xl  text-yellow">
           CONTACT ME<span className="text-white"> TO GET STARTED</span>
         </p>
         <div className="flex md:justify-end my-5">
-          <LineGradient width="mx-auto w-2/5" />
+          <LineGradient width="w-2/5" />
         </div>
       </motion.div>
       {/* form and image */}
