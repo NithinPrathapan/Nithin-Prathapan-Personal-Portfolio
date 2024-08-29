@@ -21,9 +21,9 @@ const Experiance = () => {
         </p>
         <LineGradient width="w-[10%] " />
       </motion.div>
-      <div className=" flex justify-between gap-12  py-16  ">
+      <div className="flex flex-col md:flex-row md:gap-12 gap-6 md:text-end">
         <motion.div
-          className=" w-1/2 border border-blue p-8 "
+          className=" md:w-1/2 border border-blue p-8 flex justify-end items-end "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -33,7 +33,7 @@ const Experiance = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <div className="flex flex-col gap-2">
+          <div className="flex  flex-col gap-2">
             <h1 className="text-blue font-semibold text-2xl">Softroniics</h1>
             <h5 className="flex gap-4">
               Role-MERN Stack Intern <span>(2024-Present)</span>
@@ -51,7 +51,7 @@ const Experiance = () => {
           </div>
         </motion.div>
         <motion.div
-          className="w-1/2 border border-blue p-8 text-end "
+          className="md:w-1/2 border border-blue p-8 text-end  "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

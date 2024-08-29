@@ -104,7 +104,7 @@ const Landing = ({ setSelectedpage }) => {
           </AnchorLink>
         </motion.div>
         <AnchorLink className="bg-gradient-rainblue">
-          <h1 className="font-Courgette  text-xl cursor-pointer  nbow text-center mt-10 ">
+          <h1 className="font-Courgette  text-xl cursor-pointer md:text-start text-center mt-10 ">
             Click here to see my Resume
           </h1>
         </AnchorLink>

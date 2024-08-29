@@ -3,7 +3,8 @@ import LineGradient from "./LineGradient";
 import { motion, useInView } from "framer-motion";
 import website from "../assets/web.png";
 import github from "../assets/git.png";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import { FaGithub } from "react-icons/fa";
+import { FaLaptop } from "react-icons/fa";
 
 const ProjectComponent = ({
   title,
@@ -54,9 +55,7 @@ const ProjectComponent = ({
             : "md:w-[55%] w-full md:text-start text-center flex flex-col gap-2"
         }
       >
-        <h1 className="text-2xl  font-playfair font-semibold text-yellow">
-          {title}
-        </h1>
+        <h1 className="text-2xl  font-playfair font-semibold">{title}</h1>
         <div
           className={
             layout && layout === "block"
@@ -102,20 +101,10 @@ const ProjectComponent = ({
           }
         >
           <a target="_blank" href={web}>
-            <img
-              className="w-[30px] hover:scale-[105%]  duration-300 transition-all cursor-pointer"
-              title="Visit website"
-              src={website}
-              alt=""
-            />
+            <FaLaptop className="w-[30px] hover:scale-[105%] duration-300 transition-all cursor-pointer" />
           </a>
           <a target="_blank" href={git}>
-            <img
-              className="w-[30px] hover:scale-[105%] duration-300 transition-all cursor-pointer"
-              title="View code on github"
-              src={github}
-              alt=""
-            />
+            <FaGithub className="w-[30px] hover:scale-[105%] duration-300 transition-all cursor-pointer" />
           </a>
         </div>
       </div>
