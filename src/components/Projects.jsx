@@ -138,7 +138,7 @@ const Projects = () => {
               web={"https://nike-store-blond-iota.vercel.app/"}
             />
           </div>
-          <div className="md:grid md:grid-cols-2  mt-4  justify-center items-center gap-4">
+          <div className="md:grid md:grid-cols-2 gap-4 flex flex-col   mt-4  justify-center items-center ">
             <ProjectComponent
               title="Recipie application"
               description={
