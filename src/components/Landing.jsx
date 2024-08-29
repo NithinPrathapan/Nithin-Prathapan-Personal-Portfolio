@@ -103,13 +103,24 @@ const Landing = ({ setSelectedpage }) => {
             </div>
           </AnchorLink>
         </motion.div>
-        <AnchorLink className="bg-gradient-rainblue">
-          <h1 className="font-Courgette  text-xl cursor-pointer md:text-start text-center mt-10 ">
-            Click here to see my Resume
-          </h1>
-        </AnchorLink>
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <AnchorLink href="#contacts" className="">
+            <div className="bg-deep_blue w-[140px] py-2 rounded-md px-4 border hover:text-red transition duration-500 hover:border-red  font-playfair my-10">
+              Download CV
+            </div>
+          </AnchorLink>
+        </motion.div>
+        <motion.div
+          className="flex  justify-center md:justify-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

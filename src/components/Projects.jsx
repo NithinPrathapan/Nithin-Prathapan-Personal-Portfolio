@@ -144,7 +144,7 @@ const Projects = () => {
               description={
                 "The Recipe Finder application is a dynamic web application built using React.js and Tailwind CSS, designed to help users discover, search, and explore recipes from around the world. Leveraging the MealDB API, this application provides interactive and responsive features, including recipe searches, detailed recipe views, and related YouTube video content."
               }
-              skills={["React.js", "Tailwind CSS"]}
+            skills={["React.js", "Tailwind CSS"]}
               img={recipie}
               animation={{
                 hidden: { opacity: 0, y: 25 }, // Slide in from the left

@@ -5,7 +5,7 @@ import github from "../assets/github.png";
 
 const SocialMediaIcons = () => {
   return (
-    <div className="justify-center flex my-10 md:justify-start gap-7 ">
+    <div className="justify-center flex md:justify-start gap-7 ">
       <a
         href="www.linkedin.com/in/nithin-prathapan-67a827240
 
