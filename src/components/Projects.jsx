@@ -52,7 +52,7 @@ const Projects = () => {
           <ProjectComponent
             title="Real Estate Application"
             description={
-              " Developed using  MERN stack for managing real estate listings. Users can easily add, edit, and delete listings. It includes modern and responsive design"
+              " Developed using  MERN stack for managing real estate listings. Users can easily add, edit, and delete listings. It includes modern and responsive design using Tailwind CSS. It includes secure login and registration system using JWT (JSON Web Tokens) to protect user data. Integrated real time data updates and handling asynchronous requests using Redux"
             }
             skills={[
               "React.js",
@@ -72,25 +72,25 @@ const Projects = () => {
             }}
             delay={0.5}
             img={project1}
+            git={"https://github.com/NithinPrathapan/Real-Estate-App"}
+            web={"https://mern-estate-c7gd.onrender.com/"}
           />
 
           {/* row 2 */}
           <ProjectComponent
-            title="Groccerry Application"
+            title="Groci Store (E-Commerce Application"
             description={
-              "It has been developed using MERN Stack and designed using Tailwind CSS. It includes modern and responsive design."
+              "Groci Store is a modern grocery shopping web application designed to provide users with a seamless and user-friendly online shopping experience. Built using the latest React.js ecosystem, the application allows users to browse a wide variety of groceries, add items to their cart, and place orders efficiently. The application emphasizes simplicity, responsiveness, and a streamlined shopping process."
             }
             skills={[
               "React.js",
-              "Node.js",
-              "Tailwind CSS",
-              "Express.js",
-
-              "MongoDB",
-              "JWT",
+              "React-Bootstrap",
+              "react-multi-carousel",
+              "react-slick",
               "Redux Toolkit",
-              "Tailwind",
-              "Firebase",
+              "React Router DOM",
+              "React-Toastify",
+              "React Testing Library",
             ]}
             img={grocerry}
             animation={{
@@ -98,56 +98,42 @@ const Projects = () => {
               visible: { opacity: 1, x: 0 },
             }}
             delay={0.8}
+            git={"https://github.com/NithinPrathapan/grocerry"}
+            web={"https://grocerry.vercel.app/"}
           />
 
-          <div className="flex flex-col md:flex-row  justify-center items-center gap-4">
+          <div className="flex flex-col md:flex-row h-full mt-4  justify-center items-center gap-4">
             <ProjectComponent
               title="Planty-Static Website"
               description={
-                "It has been developed using MERN Stack and designed using Tailwind CSS. It includes modern and responsive design."
+                "Planty is a static, responsive website built for showcasing a variety of plants and gardening solutions. The website is designed to provide users with a visually appealing, fast, and responsive experience. Built using React.js and Tailwind CSS, it ensures a modern, mobile-first approach to web design."
               }
-              skills={[
-                "React.js",
-                "Node.js",
-                "Tailwind CSS",
-                "Express.js",
-
-                "MongoDB",
-                "JWT",
-                "Redux Toolkit",
-                "Tailwind",
-                "Firebase",
-              ]}
+              skills={["React.js", "Tailwind CSS"]}
               img={planty}
               animation={{
                 hidden: { opacity: 0, y: 25 }, // Slide in from the left
                 visible: { opacity: 1, y: 0 },
               }}
               delay={0.5}
+              layout={"block"}
+              git={"https://github.com/NithinPrathapan/Planty-static-website"}
+              web={"https://planty-nithin-prathapans-projects.vercel.app/"}
             />{" "}
             <ProjectComponent
               title="Nike-Landing Page clone"
               description={
-                "It has been developed using MERN Stack and designed using Tailwind CSS. It includes modern and responsive design."
+                "This is a landing page for Nike, built using React.js and Tailwind CSS, with a focus on sleek design, interactivity, and responsiveness. The page is designed to showcase Nike’s Shoes, latest collections, and promotional content, providing users with a highly engaging and visually appealing experience."
               }
-              skills={[
-                "React.js",
-                "Node.js",
-                "Tailwind CSS",
-                "Express.js",
-
-                "MongoDB",
-                "JWT",
-                "Redux Toolkit",
-                "Tailwind",
-                "Firebase",
-              ]}
+              skills={["React.js", "Tailwind CSS"]}
               img={nike}
+              layout={"block"}
               animation={{
                 hidden: { opacity: 0, y: 25 }, // Slide in from the left
                 visible: { opacity: 1, y: 0 },
               }}
               delay={0.3}
+              git={"https://github.com/NithinPrathapan/nike_store"}
+              web={"https://nike-store-blond-iota.vercel.app/"}
             />
           </div>
           {/* <div
