@@ -2,6 +2,8 @@ import React from "react";
 import project1 from "../assets/real-estate.png";
 import nike from "../assets/nike.png";
 import grocerry from "../assets/groccerry.png";
+import recipie from "../assets/recipie.png";
+import currency from "../assets/currency.png";
 import planty from "../assets/planty.png";
 import { motion } from "framer-motion";
 import ProjectComponent from "./ProjectComponent";
@@ -102,7 +104,7 @@ const Projects = () => {
             web={"https://grocerry.vercel.app/"}
           />
 
-          <div className="flex flex-col md:flex-row h-full mt-4  justify-center items-center gap-4">
+          <div className="flex flex-col md:flex-row  h-full mt-4  justify-center items-center gap-4">
             <ProjectComponent
               title="Planty-Static Website"
               description={
@@ -126,6 +128,40 @@ const Projects = () => {
               }
               skills={["React.js", "Tailwind CSS"]}
               img={nike}
+              layout={"block"}
+              animation={{
+                hidden: { opacity: 0, y: 25 }, // Slide in from the left
+                visible: { opacity: 1, y: 0 },
+              }}
+              delay={0.3}
+              git={"https://github.com/NithinPrathapan/nike_store"}
+              web={"https://nike-store-blond-iota.vercel.app/"}
+            />
+          </div>
+          <div className="flex flex-col md:flex-row  h-full mt-4  justify-center items-center gap-4">
+            <ProjectComponent
+              title="Recipie application"
+              description={
+                "The Recipe Finder application is a dynamic web application built using React.js and Tailwind CSS, designed to help users discover, search, and explore recipes from around the world. Leveraging the MealDB API, this application provides interactive and responsive features, including recipe searches, detailed recipe views, and related YouTube video content."
+              }
+              skills={["React.js", "Tailwind CSS"]}
+              img={recipie}
+              animation={{
+                hidden: { opacity: 0, y: 25 }, // Slide in from the left
+                visible: { opacity: 1, y: 0 },
+              }}
+              delay={0.5}
+              layout={"block"}
+              git={"https://github.com/NithinPrathapan/Planty-static-website"}
+              web={"https://planty-nithin-prathapans-projects.vercel.app/"}
+            />{" "}
+            <ProjectComponent
+              title="Currency converter"
+              description={
+                "built using React.js that allows users to convert currencies using real-time exchange rates. The application leverages the Frankfurter API to fetch up-to-date currency conversion rates, providing users with accurate and current information.."
+              }
+              skills={["React.js", "Tailwind CSS"]}
+              img={currency}
               layout={"block"}
               animation={{
                 hidden: { opacity: 0, y: 25 }, // Slide in from the left

@@ -30,7 +30,7 @@ const ProjectComponent = ({
       }}
       className={
         layout && layout === "block"
-          ? `flex justify-between w-full gap-12 border items-center p-4 min-h-full   flex-col`
+          ? `flex justify-between w-full hover:scale-105 gap-12 border items-center p-4 max-h-full min-h-full h-full    flex-col`
           : `flex justify-between w-full gap-12 border items-center p-4  md:flex-row-reverse flex-col`
       }
     >
@@ -42,7 +42,7 @@ const ProjectComponent = ({
         }
       >
         <img
-          className="rounded-md min-w-full md:object-contain object-cover max-h-[200px] md:max-h-[380px] "
+          className="rounded-md min-w-full md:object-contain object-cover  md:max-h-[380px] "
           src={img}
           alt=""
         />

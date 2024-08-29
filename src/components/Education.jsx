@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Education = () => {
   return (
-    <section id="education" className="pt-32 pb-16">
+    <section id="qualifications" className="pt-32 pb-16">
       <motion.div
         className=" flex flex-col justify-center items-center "
         initial="hidden"

@@ -12,6 +12,7 @@ import Contact from "./components/Contact";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Education from "./components/Education";
+import Experiance from "./components/Experiance";
 
 const App = () => {
   const [selectedPage, setSelectedpage] = useState("home");
@@ -50,6 +51,10 @@ const App = () => {
       <LineGradient />
       <div className="w-5/6 mx-auto ">
         <Education />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto ">
+        <Experiance />
       </div>
       <LineGradient />
       <div className="w-5/6 mx-auto ">{/* <Testimonials /> */}</div>
