@@ -138,13 +138,13 @@ const Projects = () => {
               web={"https://nike-store-blond-iota.vercel.app/"}
             />
           </div>
-          <div className="grid grid-cols-2  mt-4  justify-center items-center gap-4">
+          <div className="md:grid md:grid-cols-2  mt-4  justify-center items-center gap-4">
             <ProjectComponent
               title="Recipie application"
               description={
                 "The Recipe Finder application is a dynamic web application built using React.js and Tailwind CSS, designed to help users discover, search, and explore recipes from around the world. Leveraging the MealDB API, this application provides interactive and responsive features, including recipe searches, detailed recipe views, and related YouTube video content."
               }
-            skills={["React.js", "Tailwind CSS"]}
+              skills={["React.js", "Tailwind CSS"]}
               img={recipie}
               animation={{
                 hidden: { opacity: 0, y: 25 }, // Slide in from the left
