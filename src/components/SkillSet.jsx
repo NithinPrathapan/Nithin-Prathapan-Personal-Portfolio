@@ -35,7 +35,7 @@ const SkillSet = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className=" grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 font-playfair text-lg tracking-wide text-yellow justify-center items-center grid-rows-8 text-center gap-4">
+          <div className=" grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 font-playfair text-lg tracking-wide  justify-center items-center grid-rows-8 text-center gap-4">
             {" "}
             <p className="hover:scale-105 transition ease-in-out duration-300 cursor-default">HTML5</p>
             <p className="hover:scale-105 transition ease-in-out duration-300 cursor-default">Tailwind CSS</p>

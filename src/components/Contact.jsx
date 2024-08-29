@@ -45,7 +45,7 @@ const Contact = () => {
         <p className="font-playfair text-start font-semibold text-4xl  text-yellow">
           CONTACT ME<span className="text-white"> TO GET STARTED</span>
         </p>
-        <div className="flex md:justify-end my-5">
+        <div className="flex md:justify-start my-5">
           <LineGradient width="w-2/5" />
         </div>
       </motion.div>
