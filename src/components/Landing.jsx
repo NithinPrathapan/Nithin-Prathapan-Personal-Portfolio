@@ -56,7 +56,7 @@ const Landing = ({ setSelectedpage }) => {
           <p className="text-[40px] font-playfair z-10 md:text-start text-center ">
             Nithin{" "}
             <span
-              className="xs:relative xs:text-deep_blue xs:font-semibold z-20
+              className="relative text-deep_blue font-semibold z-20
               xs:before:content-brush before:absolute before:-left-[25px]
               before:-top-[85px] before:z-[-1] 
               "
