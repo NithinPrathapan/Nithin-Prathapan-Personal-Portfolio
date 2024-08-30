@@ -114,7 +114,7 @@ const Landing = ({ setSelectedpage }) => {
           }}
         >
           <AnchorLink href="#contacts" className="">
-            <div className="bg-deep_blue w-[140px] py-2 rounded-md px-4 border hover:text-red transition duration-500 hover:border-red  font-playfair my-10">
+            <div className="bg-deep_blue w-[140px] py-2 rounded-md px-4 border mx-auto hover:text-red transition duration-500 hover:border-red md:mx-0 font-playfair my-10">
               Download CV
             </div>
           </AnchorLink>
