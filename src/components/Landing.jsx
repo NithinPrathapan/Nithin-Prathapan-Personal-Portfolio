@@ -56,7 +56,7 @@ const Landing = ({ setSelectedpage }) => {
           <p className="text-[40px] font-playfair z-10 md:text-start text-center ">
             Nithin{" "}
             <span
-              className="xs:relative xs:text-deep_blue xs:font-semibold z-20
+              className="xs:relative  z-20
               xs:before:content-brush before:absolute before:-left-[25px]
               before:-top-[85px] before:z-[-1] 
               "
@@ -113,11 +113,15 @@ const Landing = ({ setSelectedpage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <AnchorLink href="#contacts" className="">
+          <a
+            target="_blank"
+            href="https://drive.google.com/file/d/1XR0pNbHI45Xy8YYO-tnoLtX3F68DKb6p/view?usp=sharing"
+            className=""
+          >
             <div className="bg-deep_blue w-[140px] py-2 rounded-md px-4 border mx-auto hover:text-red transition duration-500 hover:border-red md:mx-0 font-playfair my-10">
               Download CV
             </div>
-          </AnchorLink>
+          </a>
         </motion.div>
         <motion.div
           className="flex  justify-center md:justify-start"
